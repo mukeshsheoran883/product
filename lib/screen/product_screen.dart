@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:product/model/products_model.dart';
+import 'package:product/screen/like_screen.dart';
 import 'package:product/screen/product_detail.dart';
 import 'package:product/service/provider_product.dart';
 import 'package:provider/provider.dart';
@@ -27,6 +28,19 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Product'),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.favorite),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LikedProductsScreen(),
+                  ),
+                );
+              },
+            ),
+          ],
         ),
         body: Consumer<ProviderProduct>(
           builder: (BuildContext context, ProviderProduct providerProduct,
@@ -39,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 return InkWell(
                   onTap: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return ProductDetail(productsModel: productsModel);
+                      return ProductDetail( productsModel: productsModel,);
                     },),);
                   },
                   child: Padding(
