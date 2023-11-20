@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:product/service/shared_preference_service.dart';
+import 'package:product/product/service/shared_preference_service.dart';
 class LikedProductsScreen extends StatelessWidget {
   const LikedProductsScreen({super.key});
 

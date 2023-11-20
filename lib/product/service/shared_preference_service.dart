@@ -1,5 +1,4 @@
-
-import 'package:product/model/products_model.dart';
+import 'package:product/product/model/products_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPrefService {
@@ -50,5 +49,7 @@ class SharedPrefService {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     return prefs.getStringList('likedProducts') ?? [];
   }
+
+
 
 }

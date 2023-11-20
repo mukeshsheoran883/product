@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:product/model/products_model.dart';
-import 'package:product/service/shared_preference_service.dart';
+import 'package:product/product/model/products_model.dart';
+import 'package:product/product/service/shared_preference_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ProductDetail extends StatefulWidget {

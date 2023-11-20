@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:product/model/products_model.dart';
-import 'package:product/model/products_response_list.dart';
+import 'package:product/product/model/products_model.dart';
+import 'package:product/product/model/products_response_list.dart';
 import 'package:product/util/api_end_point.dart';
 
 

@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:product/model/products_model.dart';
-import 'package:product/screen/like_screen.dart';
-import 'package:product/screen/product_detail.dart';
-import 'package:product/service/provider_product.dart';
+import 'package:product/product/model/products_model.dart';
+import 'package:product/product/screen/like_screen.dart';
+import 'package:product/product/screen/product_detail.dart';
+import 'package:product/product/service/provider_product.dart';
 import 'package:provider/provider.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({
+class ProductScreen extends StatefulWidget {
+  const ProductScreen({
     super.key,
   });
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ProductScreen> createState() => _ProductScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ProductScreenState extends State<ProductScreen> {
   @override
   void initState() {
     ProviderProduct providerProduct =
